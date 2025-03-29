@@ -20,6 +20,7 @@ import Gfcf2 from './component/GFCF/Gfcf2'
 import Gfcf3 from './component/GFCF/Gfcf3'
 import Gfcf4 from './component/GFCF/Gfcf4'
 import Gfcf6 from './component/GFCF/Gfcf6'
+import Gfcf15 from './component/GFCF/Gfcf5'
 
 const App = () => {
   return (
@@ -42,7 +43,7 @@ const App = () => {
     <Route path='/gfcf2' element={< Gfcf2/>} />
     <Route path='/gfcf3' element={< Gfcf3/>} />
     <Route path='/gfcf4' element={< Gfcf4/>} />
-    <Route path='/gfcf5' element={< Gfcf5/>} />
+    <Route path='/gfcf5' element={< Gfcf15/>} />
     <Route path='/gfcf6' element={< Gfcf6/>} />
     
     </Route>
