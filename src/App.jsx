@@ -33,6 +33,13 @@ const App = () => {
     <Route path='/gdp/gdp2' element={< Gdp2/>} />
     <Route path='/gdp/gdp3' element={< Gdp3/>} />
     <Route path='/gdp/gdp4' element={< Gdp4/>} />
+    <Route path='/gfcf1' element={< Gdp4/>} />
+    <Route path='/gfcf2' element={< Gdp4/>} />
+    <Route path='/gfcf3' element={< Gdp4/>} />
+    <Route path='/gfcf4' element={< Gdp4/>} />
+    <Route path='/gfcf5' element={< Gdp4/>} />
+    <Route path='/gfcf6' element={< Gdp4/>} />
+    
     </Route>
 
 
