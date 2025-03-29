@@ -15,6 +15,11 @@ import AnnualGDPTrend from './component/GDP/AnnualGDPTrend'
 import Gdp2 from './component/GDP/Gdp2'
 import Gdp3 from './component/GDP/Gdp3'
 import Gdp4 from './component/GDP/Gdp4'
+import Gfcf1 from './component/GFCF/Gfcf1'
+import Gfcf2 from './component/GFCF/Gfcf2'
+import Gfcf3 from './component/GFCF/Gfcf3'
+import Gfcf4 from './component/GFCF/Gfcf4'
+import Gfcf6 from './component/GFCF/Gfcf6'
 
 const App = () => {
   return (
@@ -33,12 +38,12 @@ const App = () => {
     <Route path='/gdp/gdp2' element={< Gdp2/>} />
     <Route path='/gdp/gdp3' element={< Gdp3/>} />
     <Route path='/gdp/gdp4' element={< Gdp4/>} />
-    <Route path='/gfcf1' element={< Gdp4/>} />
-    <Route path='/gfcf2' element={< Gdp4/>} />
-    <Route path='/gfcf3' element={< Gdp4/>} />
-    <Route path='/gfcf4' element={< Gdp4/>} />
-    <Route path='/gfcf5' element={< Gdp4/>} />
-    <Route path='/gfcf6' element={< Gdp4/>} />
+    <Route path='/gfcf1' element={< Gfcf1/>} />
+    <Route path='/gfcf2' element={< Gfcf2/>} />
+    <Route path='/gfcf3' element={< Gfcf3/>} />
+    <Route path='/gfcf4' element={< Gfcf4/>} />
+    <Route path='/gfcf5' element={< Gfcf5/>} />
+    <Route path='/gfcf6' element={< Gfcf6/>} />
     
     </Route>
 
