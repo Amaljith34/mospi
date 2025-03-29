@@ -1,21 +1,31 @@
-import { FaChartBar, FaClipboardList, FaShoppingBag, FaUserPlus } from "react-icons/fa";
+import { FaChartBar } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Dashboard2 = () => {
+  const navigate = useNavigate();
+
   const stats = [
-    { icon: <FaChartBar className="text-yellow-400 text-2xl" />, value: "$5k", label: "Total Sales", change: "+10% from yesterday", color: "text-yellow-400" },
-    { icon: <FaClipboardList className="text-green-400 text-2xl" />, value: "500", label: "Total Order", change: "+8% from yesterday", color: "text-green-400" },
-    { icon: <FaShoppingBag className="text-pink-400 text-2xl" />, value: "9", label: "Product Sold", change: "+2% from yesterday", color: "text-pink-400" },
-    { icon: <FaUserPlus className="text-blue-400 text-2xl" />, value: "12", label: "New Customer", change: "+3% from yesterday", color: "text-blue-400" },
+    { icon: <FaChartBar className="text-yellow-400 text-2xl" />, value: "GDP", label: "Total Sales", change: "", color: "text-yellow-400", path: "/GDP" },
+    { icon: <FaChartBar className="text-green-400 text-2xl" />, value: "Gross Value Added", label: "Total Order", change: "", color: "text-green-400", path: "/Gross Value Added" },
+    { icon: <FaChartBar className="text-pink-400 text-2xl" />, value: "Gross Industrial Usage", label: "Product Sold", change: "", color: "text-pink-400", path: "/Gross Industrial Usage" },
+    { icon: <FaChartBar className="text-neutral-600 text-2xl" />, value: "GFCF", label: "Product Sold", change: "", color: "text-pink-400", path: "/GFCF" },
+    { icon: <FaChartBar className="text-blue-400 text-2xl" />, value: "Key Aggregates of National Account", label: "New Customer", change: "", color: "text-blue-400", path: "/Key Aggregates of National Account" },
+    { icon: <FaChartBar className="text-fuchsia-400 text-2xl" />, value: "Statewise Comparison", label: "New Customer", change: "", color: "text-blue-400", path: "/Statewise Comparison" },
+    { icon: <FaChartBar className="text-red-400 text-2xl" />, value: "Statistical Analysis", label: "New Customer", change: "", color: "text-blue-400", path: "/Statistical Analysis" },
   ];
 
   return (
     <div className="min-h-screen bg-gray-900 text-white p-6">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-2xl font-semibold">Today's Sales</h2>
-        <p className="text-gray-400">Sales Summary</p>
+        <h2 className="text-2xl font-semibold">National Account Statistics</h2>
+        <p className="text-gray-400"></p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-6">
           {stats.map((stat, index) => (
-            <div key={index} className="bg-gray-800 p-6 rounded-lg shadow-md flex flex-col items-center">
+            <div
+              key={index}
+              className="bg-gray-800 p-6 rounded-lg shadow-md flex flex-col items-center cursor-pointer hover:bg-gray-700 transition"
+              onClick={() => navigate(stat.path)}
+            >
               <div className="mb-3">{stat.icon}</div>
               <h3 className="text-2xl font-bold">{stat.value}</h3>
               <p className="text-gray-400">{stat.label}</p>
@@ -29,6 +39,7 @@ const Dashboard2 = () => {
 };
 
 export default Dashboard2;
+
 
 
 
