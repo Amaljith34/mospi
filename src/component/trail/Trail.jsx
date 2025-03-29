@@ -14,7 +14,7 @@ const GDP = () => {
   return (
     <div className="min-h-screen bg-gray-900 text-white p-6">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-2xl font-semibold">GDp</h2>
+        <h2 className="text-2xl font-semibold">GDP</h2>
         <div className="flex flex-col gap-4 mt-6">
           {stats.map((stat, index) => (
             <div
