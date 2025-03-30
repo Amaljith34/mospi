@@ -1,22 +1,33 @@
+import { useState } from "react";
 import { FaChartBar } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
-const Gross_Value_Added = () => {
+export default function Gross_Value_Added() {
   const navigate = useNavigate();
+  const [isOpen, setIsOpen] = useState(true);
+
+  const handleToggleSidebar = () => {
+    setIsOpen(!isOpen);
+  };
 
   const stats = [
-    { icon: <FaChartBar className="text-yellow-400 text-2xl" />, value: "Contribution of Agriculture", label: "Total Sales", change: "+10% from yesterday", color: "text-yellow-400", path: "/GDP" },
-    { icon: <FaChartBar className="text-green-400 text-2xl" />, value: "Forestry and Fishing in Value Added", label: "Total Order", change: "+8% from yesterday", color: "text-green-400", path: "/Gross Value Added" },
-    { icon: <FaChartBar className="text-pink-400 text-2xl" />, value: "Contribution of Manufacturing in Value Added", label: "Product Sold", change: "+2% from yesterday", color: "text-pink-400", path: "/Gross Industrial Usage" },
-    { icon: <FaChartBar className="text-neutral-600 text-2xl" />, value: "Contribution of Transport, Storage Storage", label: "Product Sold", change: "+2% from yesterday", color: "text-pink-400", path: "/GFCF" },
-    { icon: <FaChartBar className="text-amber-700 text-2xl" />, value: "Communication & Service in Value Added", label: "Product Sold", change: "+2% from yesterday", color: "text-pink-400", path: "/GFCF" },
+    { icon: <FaChartBar className="text-blue-400 text-2xl" />, value: "Contribution of Agriculture , Forestry and Fishing in Value Added", label: "Output Stats", change: "+5% from last quarter", color: "text-blue-400", path: "/gva1a" },
+    { icon: <FaChartBar className="text-red-400 text-2xl" />, value: "Contribution of Manufacturing in Value Added", label: "Power Usage", change: "-2% from last month", color: "text-red-400", path: "/GVA1b" }
   ];
 
   return (
     <div className="min-h-screen bg-gray-900 text-white p-6">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-2xl font-semibold">Today's Sales</h2>
-        <p className="text-gray-400">Sales Summary</p>
+        <h2 className="text-2xl font-semibold text-blue-400">Gross Value Added</h2>
+        
+        <div className="mt-4 bg-gray-800 p-6 rounded-lg shadow-lg">
+          <iframe
+            src="/images/gvabasic.png"
+            className="w-full h-[80vh] rounded-lg"
+            title="Industrial Data Chart"
+          />
+        </div>
+        
         <div className="flex flex-col gap-4 mt-6">
           {stats.map((stat, index) => (
             <div
@@ -36,6 +47,4 @@ const Gross_Value_Added = () => {
       </div>
     </div>
   );
-};
-
-export default Gross_Value_Added;
+}

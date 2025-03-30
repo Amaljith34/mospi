@@ -6,19 +6,19 @@ const Dashboard2 = () => {
 
   const stats = [
     { icon: <FaChartBar className="text-yellow-400 text-2xl" />, value: "GDP", label: "Total Sales", change: "", color: "text-yellow-400", path: "/GDP" },
-    { icon: <FaChartBar className="text-green-400 text-2xl" />, value: "Gross Value Added", label: "Total Order", change: "", color: "text-green-400", path: "/Gross Value Added" },
-    { icon: <FaChartBar className="text-pink-400 text-2xl" />, value: "Gross Industrial Usage", label: "Product Sold", change: "", color: "text-pink-400", path: "/Gross Industrial Usage" },
-    { icon: <FaChartBar className="text-neutral-600 text-2xl" />, value: "GFCF", label: "Product Sold", change: "", color: "text-pink-400", path: "/GFCF" },
-    { icon: <FaChartBar className="text-blue-400 text-2xl" />, value: "Key Aggregates of National Account", label: "New Customer", change: "", color: "text-blue-400", path: "/Key Aggregates of National Account" },
-    { icon: <FaChartBar className="text-fuchsia-400 text-2xl" />, value: "Statewise Comparison", label: "New Customer", change: "", color: "text-blue-400", path: "/Statewise Comparison" },
-    { icon: <FaChartBar className="text-red-400 text-2xl" />, value: "Statistical Analysis", label: "New Customer", change: "", color: "text-blue-400", path: "/Statistical Analysis" },
+    { icon: <FaChartBar className="text-green-400 text-2xl" />, value: "Gross Value Added", label: "Total Order", change: "", color: "text-green-400", path: "/GrossValueAdded" },
+    { icon: <FaChartBar className="text-pink-400 text-2xl" />, value: "Gross Industrial Usage", label: "Product Sold", change: "", color: "text-pink-400", path: "/GrossIndustrialUsage" },
+    { icon: <FaChartBar className="text-neutral-600 text-2xl" />, value: "GFCF", label: "Product Sold", change: "", color: "text-pink-400", path: "/GrossIndustrialUsage" },
+    { icon: <FaChartBar className="text-blue-400 text-2xl" />, value: "Key Aggregates of National Account", label: "New Customer", change: "", color: "text-blue-400", path: "/Key_Aggregates_National_Account" },
+    { icon: <FaChartBar className="text-fuchsia-400 text-2xl" />, value: "Statewise Comparison", label: "New Customer", change: "", color: "text-blue-400", path: "/StatewiseComparison" },
+    { icon: <FaChartBar className="text-red-400 text-2xl" />, value: "Statistical Analysis", label: "New Customer", change: "", color: "text-blue-400", path: "/StatisticalAnalysis" },
   ];
 
   return (
     <div className="min-h-screen bg-gray-900 text-white p-6">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-2xl font-semibold">National Account Statistics</h2>
-        <p className="text-gray-400"></p>
+        <p className="text-gray-400">Economic Growth, GVA, and GDP Forecasting</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-6">
           {stats.map((stat, index) => (
             <div
