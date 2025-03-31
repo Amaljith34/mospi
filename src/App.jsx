@@ -31,13 +31,18 @@ import Kana5 from './component/kana/Kana5'
 import Kana7 from './component/kana/kana7'
 import Kana8 from './component/kana/Kana8'
 import Kana9 from './component/kana/Kana9'
+import State1 from './component/Statewise/State1'
+import State2 from './component/Statewise/State2'
+import State3 from './component/Statewise/State3'
 
 const App = () => {
   return (
     <BrowserRouter>
     <Routes>
     <Route path='/' element={<Sidebar />}>
-    <Route path='/dashboard' element={<Dashboard2 />} />
+    <Route index element={<Dashboard2 />} />
+
+    {/* <Route path='/dashboard' element={<Dashboard2 />} /> */}
     <Route path='/GDP' element={< GDP/>} />
     <Route path='/GrossValueAdded' element={< Gross_Value_Added/>} />
     <Route path='/GrossIndustrialUsage' element={< Gross_Industrial_Usage/>} />
@@ -65,6 +70,9 @@ const App = () => {
     <Route path='/kana7' element={< Kana7/>} />
     <Route path='/kana8' element={< Kana8/>} />
     <Route path='/kana9' element={< Kana9/>} />
+    <Route path='/state1' element={< State1/>} />
+    <Route path='/state2' element={< State2/>} />
+    <Route path='/state3' element={< State3/>} />
     
     </Route>
 

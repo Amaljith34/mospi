@@ -27,7 +27,7 @@ export default function Sidebar() {
           {/* Sidebar Links */}
           <ul>
             {[
-              { path: "/dashboard", label: "Dashboard", icon: <FaTachometerAlt /> },
+              { path: "/", label: "Dashboard", icon: <FaTachometerAlt /> },
               { path: "/GDP", label: "GDP", icon: <FaChartBar className="text-yellow-400" /> },
               { path: "/GrossValueAdded", label: "Gross Value Added", icon: <FaChartBar className="text-green-400" /> },
               { path: "/GrossIndustrialUsage", label: "Gross Industrial Usage", icon: <FaChartBar className="text-pink-400" /> },
