@@ -33,7 +33,6 @@ import Kana8 from './component/kana/Kana8'
 import Kana9 from './component/kana/Kana9'
 import State1 from './component/Statewise/State1'
 import State2 from './component/Statewise/State2'
-import State3 from './component/Statewise/State3'
 
 const App = () => {
   return (
@@ -72,6 +71,7 @@ const App = () => {
     <Route path='/kana9' element={< Kana9/>} />
     <Route path='/state1' element={< State1/>} />
     <Route path='/state2' element={< State2/>} />
+    
     <Route path='/state3' element={< State3/>} />
     
     </Route>
