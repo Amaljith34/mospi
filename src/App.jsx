@@ -23,8 +23,9 @@ import Gfcf6 from './component/GFCF/Gfcf6'
 import Gfcf15 from './component/GFCF/Gfcf5'
 import GAV1a from './component/GrossValueAdded/one/GAV1a'
 import GVA1b from './component/GrossValueAdded/one/GVA1b'
-import Kana1 from './component/kana/kana1'
 import Kana2 from './component/kana/kana2'
+import Kana1 from "./component/kana/kana1"; // Adjust path if needed
+
 import Kana3 from './component/kana/kana3'
 import Kana4 from './component/kana/Kana4'
 import Kana5 from './component/kana/Kana5'
