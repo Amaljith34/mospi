@@ -30,7 +30,7 @@ export default function Kana9() {
         </div>
         <div className="mt-4 bg-gray-800 p-6 rounded-lg shadow-lg flex justify-center">
           <img
-            src="/images/GDPCURNTCONSTANT.png"
+            src="/images/netgrossplot.png"
             alt="Descriptive Text for Image"
             className="w-auto h-auto max-w-full max-h-[80vh] rounded-lg object-contain"
           />

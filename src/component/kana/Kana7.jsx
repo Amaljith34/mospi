@@ -30,7 +30,7 @@ export default function Kana7() {
         </div>
         <div className="mt-4 bg-gray-800 p-6 rounded-lg shadow-lg">
           <iframe
-            src="/Kanagraph.html"
+            src="/ImpoExp.html"
             className="w-full h-[80vh] rounded-lg"
             title="Task Management Page"
           />

@@ -28,11 +28,11 @@ export default function Kana3() {
             </button>
           </div>
         </div>
-        <div className="mt-4 bg-gray-800 p-6 rounded-lg shadow-lg flex justify-center">
-          <img
-            src="/images/GDPCURNTCONSTANT.png"
-            alt="Descriptive Text for Image"
-            className="w-auto h-auto max-w-full max-h-[80vh] rounded-lg object-contain"
+        <div className="mt-4 bg-gray-800 p-6 rounded-lg shadow-lg">
+          <iframe
+            src="/exportGood.html"
+            className="w-full h-[80vh] rounded-lg"
+            title="Task Management Page"
           />
         </div>
       </div>

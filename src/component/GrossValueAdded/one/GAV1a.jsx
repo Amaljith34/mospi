@@ -24,12 +24,12 @@ export default function GAV1a() {
       <div className="flex flex-1">
         <div className="w-1/2 p-6 flex flex-col items-center justify-center">
           <h1 className="text-3xl font-bold text-blue-400 text-center">Contribution of Agriculture</h1>
-          <div className="mt-4 bg-gray-800 p-6 rounded-lg shadow-lg w-full h-[90%] flex items-center justify-center">
+          <div className="mt-4 bg-white p-6 rounded-lg shadow-lg w-full h-[90%] flex items-center justify-center">
             <img src="/images/agriculturefor.png" alt="Agricultural Contribution" className="w-full h-full object-contain rounded-lg shadow-lg" />
           </div>
         </div>
         <div className="w-1/2 p-6 flex items-center justify-center">
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg w-full h-[90%] flex items-center justify-center">
+          <div className="bg-white p-6 rounded-lg shadow-lg w-full h-[90%] flex items-center justify-center">
             <img src="/images/Agricultureforandfishing.png" alt="Agriculture and Fishing" className="w-full h-full object-contain rounded-lg shadow-lg" />
           </div>
         </div>

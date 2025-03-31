@@ -28,7 +28,6 @@ import Kana2 from './component/kana/kana2'
 import Kana3 from './component/kana/kana3'
 import Kana4 from './component/kana/Kana4'
 import Kana5 from './component/kana/Kana5'
-import Kana6 from './component/kana/Kana6'
 import Kana7 from './component/kana/kana7'
 import Kana8 from './component/kana/Kana8'
 import Kana9 from './component/kana/Kana9'
@@ -63,7 +62,6 @@ const App = () => {
     <Route path='/kana3' element={< Kana3/>} />
     <Route path='/kana4' element={< Kana4/>} />
     <Route path='/kana5' element={< Kana5/>} />
-    <Route path='/kana6' element={< Kana6/>} />
     <Route path='/kana7' element={< Kana7/>} />
     <Route path='/kana8' element={< Kana8/>} />
     <Route path='/kana9' element={< Kana9/>} />
